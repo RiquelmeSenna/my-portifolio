@@ -27,6 +27,7 @@ aside {
     width: 20%;
     margin-left: 5vw;
     padding: 45px 0px 45px 0px;
+    overflow-y: scroll;
 
 }
 
@@ -99,6 +100,27 @@ aside ul a li:hover {
 .active {
     background-color: white;
     color: #a43f49;
+}
+
+.social-medias {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.social {
+    width: 35px;
+    height: 35px;
+    background-color: #83323a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.social a img {
+    width: 25px;
+    height: auto;
 }
 
 main {
