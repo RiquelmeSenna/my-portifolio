@@ -104,8 +104,8 @@ aside ul a li:hover {
 }
 
 .active {
-    background-color: white;
     color: #a43f49;
+    background-color: white;
 }
 
 .social-medias {
@@ -130,6 +130,7 @@ aside ul a li:hover {
 }
 
 main {
+    scroll-behavior: smooth;
     flex: 1;
     padding: 2vh 5vw 4vh 5vw;
     overflow: auto;
@@ -200,13 +201,10 @@ section {
     border-radius: 5px;
     margin-top: 20px;
     cursor: pointer;
+    transition: all ease 0.5s;
 }
 
-.technology:hover {
-    background-color: white;
-    color: #a43f49;
-    transition: all ease 1s;
-}
+
 
 .name-tech {
     font-size: 25px;
