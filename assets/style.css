@@ -30,6 +30,14 @@ aside {
     overflow-y: auto;
 }
 
+aside button {
+    display: none;
+}
+
+.bar-menu {
+    display: none;
+}
+
 .profile {
     text-align: center;
     display: flex;
@@ -284,4 +292,106 @@ section {
     background-color: white;
     color: #a43f49;
     transition: all ease 1s;
+}
+
+@media screen and (max-width:1024px) {
+    aside {
+        width: 25%;
+    }
+
+    main {
+        padding: 2vh 3vw 4vh 3vw;
+    }
+
+    .about img {
+        width: 320px;
+        height: 230px;
+    }
+
+    .technology {
+        width: 100%;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    #whatsapp {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    aside {
+        display: block;
+        position: fixed;
+        margin-left: -100%;
+        transition: all ease 0.5s;
+        width: 40%;
+        height: 100%;
+        padding-top: 0px;
+    }
+
+    aside button {
+        width: 100%;
+        display: block;
+        background-color: white;
+        height: 50px;
+        margin-bottom: 15px;
+        border: 0px;
+        cursor: pointer;
+    }
+
+    aside button div {
+        color: #a43f49;
+        font-weight: 700;
+    }
+
+    .bar-menu {
+        display: none;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 40px;
+        background-color: white;
+        height: 40px;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+
+    .line-menu {
+        width: 20px;
+        height: 5px;
+        background-color: #a43f49;
+        margin-top: 3px;
+    }
+
+}
+
+@media screen and (max-width : 550px) {
+    .about {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 70%;
+    }
+
+    .about img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about #desc {
+        margin-left: 0px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+
+    #whatsapp {
+        width: 70%;
+    }
 }
