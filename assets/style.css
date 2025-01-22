@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Poppins", serif;
 }
 
 body {
@@ -191,7 +192,7 @@ section {
 
 .technology {
     width: 48%;
-    height: 200px;
+    height: 210px;
     background-color: rgba(100, 100, 100, 0.3);
     padding: 20px;
     color: white;
@@ -201,8 +202,6 @@ section {
     transition: all ease 0.5s;
 }
 
-
-
 .name-tech {
     font-size: 25px;
     margin-top: 10px;
@@ -210,7 +209,8 @@ section {
 
 .desc-tech {
     margin-top: 10px;
-    font-size: 18px;
+    max-height: 10px;
+    font-size: 15px;
 }
 
 .projects {
@@ -366,6 +366,10 @@ section {
 }
 
 @media screen and (max-width : 550px) {
+    .title {
+        font-size: 30px;
+    }
+
     .about {
         flex-direction: column;
     }
@@ -385,8 +389,12 @@ section {
         font-size: 16px;
     }
 
+    .desc-tech {
+        font-size: 12px;
+    }
 
     #whatsapp {
         width: 70%;
+        font-size: 25px;
     }
 }
